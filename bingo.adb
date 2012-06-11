@@ -1,0 +1,108 @@
+-- Ada Body file --
+-- bingo.adb --
+-- Uday Subedi, Prog. lang & compilers --
+
+with Text_IO;
+use Text_IO;
+with ada.text_io, ada.integer_text_io, ada.numerics.discrete_random;
+use ada.text_io, ada.integer_text_io;
+
+package body bingo is
+
+	procedure create(card : out cardType) is	
+	-- procedure 'create' creates a bingo card array and
+	-- fills in the random numbers
+	
+		package rand_pkg is new ada.numerics.discrete_random(positive);
+		-- Instantiate the generic package for random numbers
+		
+		use rand_pkg;
+		
+		gen : generator;	
+		-- seed for random no. generation.
+
+		begin
+			reset(gen);	
+			--initialize the seed.
+			
+			for Row in 1..5 loop
+				for Col in 1..5 loop
+					if Col = 1 then
+						card(Row, Col).value := random(gen) mod 16;	
+						-- numbers for B columns
+					elsif Col = 2 then
+						card(Row, Col).value := 16 + random(gen) mod 15;	
+						-- numbers for I columns
+					elsif Col = 3 then
+						card(Row, Col).value := 31 + random(gen) mod 15;	
+						-- numbers for N columns
+					elsif Col = 4 then
+						card(Row, Col).value := 46 + random(gen) mod 15;	
+						--numbers for G columns
+					else
+						card(Row, Col).value := 61 + random(gen) mod 15;	
+						--numbers for O columns
+					end if;
+				end loop;
+			end loop;
+
+	end create;
+
+	
+	procedure mark(card : in out cardType; col : in character; num : in integer) is   
+	-- mark the bingo card position when the no. called matches with bingo number
+	-- Receives a card, a column label and a number. Then, it marks the proper square on the -- Bingo card.
+	
+	columnID: positive;   
+	pos: positive:=1;
+
+	begin
+
+			if col = 'B' or col= 'b' then
+				columnID := 1;
+			elsif col = 'I' or col ='i' then
+				columnID := 2;
+			elsif col = 'N' or col = 'n' then
+				columnID := 3;
+			elsif col = 'G' or col = 'g' then
+				columnID := 4;
+			elsif col = 'O' or col = 'o' then
+				columnID := 5;
+			end if;
+
+			-- search the called no. and find the position on the column
+			for col in columnID..columnID loop
+				for row in 1..5 loop
+					if card(row,col).value = num then
+					exit;
+					end if;
+				pos:=pos+1;
+				end loop;
+			end loop;
+		
+			-- mark --
+			card(pos, columnID).marked := true;	
+	end mark;
+
+	
+	procedure print(card: in cardType) is			
+	-- marks the card woth the asterisk.
+	
+		package Int_IO is new Text_IO.Integer_IO(Integer);
+		
+		begin
+		
+		for row in 1..5 loop
+			for col in 1..5 loop
+				Int_IO.Put(card(row, col).value);
+				if card(row, col).marked = True then
+					Put('*');
+				end if;
+			end loop;
+			new_line;
+			new_line;
+			new_line;
+		end loop;
+	end print;
+
+end bingo;

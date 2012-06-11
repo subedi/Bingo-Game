@@ -1,0 +1,74 @@
+V "GNAT Lib v4.1"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnvnvnnnvnnnnnvnnnnnnnnnnvnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnn
+
+U main%b		main.adb		47e562ef NE SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W bingo%s		bingo.adb		bingo.ali
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070622110217 9c7dd3ea
+D a-except.ads		20070622110217 64bf35a8
+D a-finali.ads		20070622110218 2f48e141
+D a-filico.ads		20070622110218 9299732a
+D a-ioexce.ads		20070622110218 be0900a0
+D a-stream.ads		20070622110217 246b88a6
+D a-tags.ads		20070622110218 a574b7d1
+D a-tags.adb		20070622110218 eb2a3d20
+D a-textio.ads		20070622110218 bc58c967
+D a-tiinau.ads		20070622110217 4c59ad8d
+D a-tiinio.ads		20070622110218 75fbf922
+D a-tiinio.adb		20070622110218 f6dd0466
+D bingo.ads		20110418070205 33cdb626
+D interfac.ads		20070622110217 a69cad5c
+D i-cstrea.ads		20070622110218 85085d90
+D main.adb		20110421033425 de5044f6
+D system.ads		20070622110218 f14ecda8
+D s-crtl.ads		20070622110218 44c0e2c2
+D s-exctab.ads		20070622110218 e14b1567
+D s-ficobl.ads		20070622110218 ed792749
+D s-finimp.ads		20070622110218 33c39bf7
+D s-finroo.ads		20070622110218 78d634f7
+D s-htable.ads		20070622110218 9598cfa4
+D s-parame.ads		20070622110218 6bd7b874
+D s-secsta.ads		20070622110217 db466d0c
+D s-soflin.ads		20070622110217 bb3ef1e4
+D s-stache.ads		20070622110218 07e06d0a
+D s-stalib.ads		20070622110218 99eda53f
+D s-stoele.ads		20070622110218 f7e9ab3e
+D s-stoele.adb		20070622110218 a397f9ca
+D s-stratt.ads		20070622110218 9823065b
+D s-traent.ads		20070622110217 9950c76b
+D s-unstyp.ads		20070622110217 b399198a
+D text_io.ads		20070622110218 aa78903f
+D unchconv.ads		20070622110218 34860a55
+X 9 a-textio.ads
+167U14*New_Line 16|29r17
+207U14*Get 16|36r25
+243U14*Put 16|34r17
+264U14*Put_Line 16|27r17 32r17 33r17
+X 11 a-tiinio.ads
+47k21*Integer_IO 86e27 16|12r31
+57U14 Get 16|37r24[12]
+X 13 bingo.ads
+6K9*bingo 27e10 16|7w6 14r5 24r9 28r17 40r17
+7A6*cardType 16|18r8
+9U11*create 16|24r15
+12U11*mark 16|40r23
+16U11*print 16|28r23
+X 16 main.adb
+9U11*main 9b11 44l5 44t9
+12K9 Int_IO[11|47] 37r17
+18a1 board{13|7A6} 24m22 28r29 40m28
+19i1 value{positive} 37m28 40r42
+20e1 title{character} 36m29 40r35
+26i13 game_call{integer}
+X 34 text_io.ads
+19K9*Text_IO=19:29 16|6w6 12r23 15r5 36r17
+

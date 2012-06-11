@@ -1,0 +1,119 @@
+V "GNAT Lib v4.1"
+P SS ZX
+R nnnnnnnvnnnnnnvnvnvvvnnnvnvnnnnnnnnnnvnnnnnnnvnnnnnnvvnnnnnnnnnnnnnnnnn
+
+U bingo%b		bingo.adb		dbbf5342 NE PK IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.string_ops_concat_5%s  s-sopco5.adb	s-sopco5.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U bingo%s		bingo.ads		33cdb626 EE NE PK IL
+
+D ada.ads		20070622110217 9c7dd3ea
+D a-calend.ads		20070622110217 979f5d2f
+D a-except.ads		20070622110217 64bf35a8
+D a-finali.ads		20070622110218 2f48e141
+D a-filico.ads		20070622110218 9299732a
+D a-inteio.ads		20070622110218 03bc737c
+D a-ioexce.ads		20070622110218 be0900a0
+D a-numeri.ads		20070622110218 1cf3e608
+D a-nudira.ads		20070622110218 8ccc9cf3
+D a-nudira.adb		20070622110218 cb202240
+D a-stream.ads		20070622110217 246b88a6
+D a-tags.ads		20070622110218 a574b7d1
+D a-tags.adb		20070622110218 eb2a3d20
+D a-textio.ads		20070622110218 bc58c967
+D a-tiinau.ads		20070622110217 4c59ad8d
+D a-tiinio.ads		20070622110218 75fbf922
+D a-tiinio.adb		20070622110218 f6dd0466
+D bingo.ads		20110418070205 33cdb626
+D bingo.adb		20110421033549 712253b3
+D interfac.ads		20070622110217 a69cad5c
+D i-cstrea.ads		20070622110218 85085d90
+D system.ads		20070622110218 f14ecda8
+D s-arit64.ads		20070622110218 ded5f422
+D s-crtl.ads		20070622110218 44c0e2c2
+D s-exctab.ads		20070622110218 e14b1567
+D s-ficobl.ads		20070622110218 ed792749
+D s-finimp.ads		20070622110218 33c39bf7
+D s-finroo.ads		20070622110218 78d634f7
+D s-htable.ads		20070622110218 9598cfa4
+D s-imgint.ads		20070622110218 8222338e
+D s-parame.ads		20070622110218 6bd7b874
+D s-secsta.ads		20070622110217 db466d0c
+D s-soflin.ads		20070622110217 bb3ef1e4
+D s-stache.ads		20070622110218 07e06d0a
+D s-stalib.ads		20070622110218 99eda53f
+D s-stoele.ads		20070622110218 f7e9ab3e
+D s-stoele.adb		20070622110218 a397f9ca
+D s-stratt.ads		20070622110218 9823065b
+D s-strops.ads		20070622110218 92e79914
+D s-sopco3.ads		20070622110218 14cc5bf6
+D s-sopco4.ads		20070622110218 dca7f27b
+D s-sopco5.ads		20070622110218 63c5ad18
+D s-traent.ads		20070622110217 9950c76b
+D s-unstyp.ads		20070622110217 b399198a
+D s-valint.ads		20070622110218 70811f54
+D text_io.ads		20070622110218 aa78903f
+D unchconv.ads		20070622110218 34860a55
+X 1 ada.ads
+16K9*Ada 19e8 19|7r6 7r19 7r40 8r5 8r18 16r41
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[16|47] 19|7w23 8r22
+X 8 a-numeri.ads
+16K13*Numerics 32e17 19|7r44 16r45
+X 9 a-nudira.ads
+52k22*Discrete_Random 116e33 19|7w53 16r54
+65R9 Generator 19|21r23[16]
+67V13 Random{integer} 19|31r73[16] 34r78[16] 37r78[16] 40r78[16] 43r78[16]
+69U14 Reset 19|25r25[16]
+X 14 a-textio.ads
+49K13*Text_IO 451e16 19|7w10 8r9
+167U14*New_Line 19|102r25 103r25 104r25
+209U14*Put 19|99r41
+X 16 a-tiinio.ads
+47k21*Integer_IO 86e27 19|91r47
+67U14 Put 19|97r40[91]
+X 18 bingo.ads
+6K9*bingo 27l5 27e10 19|10b14 108l5 108t10
+7A6*cardType 9r28 12r29 16r27 25c14 19|12r37 52r38 88r34
+9U11*create 9<18 19|12b19 49l13 49t19
+9a18 card{7A6} 19|12b26 31m49 34m49 37m49 40m49 43m49
+12U11*mark 12=16 12>39 12>58 19|52b19 85l13 85t17
+12a16 card{7A6} 19|52b24 76r44 84m25
+12e39 col{character} 19|52b48 61r28 61r41 63r31 63r44 65r31 65r44 67r31 67r44
+. 69r31 69r44
+12i58 num{integer} 19|52b68 76r66
+16U11*print 16>17 19|88b19 106l13 106t18
+16a17 card{7A6} 19|88b25 97r44 98r36
+20R14 square 24e19 25r47
+22i17*value{integer} 19|31r64 34r64 37r64 40r64 43r64 76r58 97r59
+23b17*marked{boolean} 19|84r45 98r51
+X 19 bingo.adb
+16K25 rand_pkg[9|52] 19r21
+21r17 gen{9|65R9[16]} 25r31 31r80 34r85 37r85 40r85 43r85
+28i29 Row{integer} 31r54 34r54 37r54 40r54 43r54
+29i37 Col{integer} 30r44 31r59 33r47 34r59 36r47 37r59 39r47 40r59 43r59
+56i9 columnID{positive} 62m33 64m33 66m33 68m33 70m33 74r36 74r46 84r35
+57i9 pos{positive} 79m33 79r38 84r30
+74i29 col{integer} 76r53
+75i37 row{integer} 76r49
+91K25 Int_IO[16|47] 97r33
+95i21 row{integer} 97r49 98r41
+96i29 col{integer} 97r54 98r46
+X 46 text_io.ads
+19K9*Text_IO=19:29 19|5w6 6r5 91r39
+
